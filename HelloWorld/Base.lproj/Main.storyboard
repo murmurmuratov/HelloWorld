@@ -23,27 +23,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G5-ud-bN6">
-                                <rect key="frame" x="128.5" y="706" width="157" height="50"/>
+                                <rect key="frame" x="127" y="706" width="160" height="50"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="8uT-vf-W5m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="2RV-nh-qPV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NHX-fM-ZhY"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YtI-fG-P2U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jzf-9t-2K1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="2c3-Xk-H5I"/>
-                            <constraint firstItem="Jzf-9t-2K1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="57s-ch-Q9e"/>
-                            <constraint firstItem="1G5-ud-bN6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7kv-vf-fvj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1G5-ud-bN6" secondAttribute="bottom" constant="106" id="UPG-yN-v1p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1G5-ud-bN6" secondAttribute="bottom" constant="106" id="Eri-Vm-L1x"/>
+                            <constraint firstItem="1G5-ud-bN6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQq-p2-H7T"/>
+                            <constraint firstItem="Jzf-9t-2K1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tMj-YU-EnT"/>
+                            <constraint firstItem="Jzf-9t-2K1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="whz-XI-8aH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="Jzf-9t-2K1" id="REW-a5-sF3"/>
+                        <outlet property="toggleButton" destination="1G5-ud-bN6" id="uYN-1L-clf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
